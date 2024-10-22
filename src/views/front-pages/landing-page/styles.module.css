@@ -9,7 +9,7 @@
   border-end-start-radius: 3.5rem;
   border-end-end-radius: 3.5rem;
   &.bgLight {
-    background: linear-gradient(138.18deg, #eae8fd 0%, #fce5e6 94.44%);
+    background: linear-gradient(138.18deg, #eae8fd 0%, #fcf6e5 94.44%);
   }
   &.bgDark {
     background: var(--mui-palette-background-default);
@@ -17,7 +17,7 @@
 }
 
 .heroSecDashboard {
-  inline-size: 100%;
+  inline-size: 60%;
 }
 
 .heroSectionElements {
@@ -29,7 +29,7 @@
 }
 
 .heroText {
-  background: linear-gradient(135deg, #28c76f 0%, #5a4aff 47.92%, #ff3739 100%) repeat;
+  background: linear-gradient(135deg, #ff9819 0%, #ffd54d 47.92%, #c76a28 100%) repeat;
   background-size: 200% 200%;
   background-clip: text;
   color: transparent;

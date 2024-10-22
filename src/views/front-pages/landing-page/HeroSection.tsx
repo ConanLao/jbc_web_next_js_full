@@ -30,10 +30,19 @@ const HeroSection = ({ mode }: { mode: SystemMode }) => {
 
   // Vars
   const dashboardImageLight = '/images/front-pages/landing-page/hero-dashboard-light.png'
+
+  // const dashboardImageLight =
+  // 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fpixlr.com%2Fimage-generator%2F&psig=AOvVaw3UbFoNPfliAEoCDmn4_iTV&ust=1729687692657000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCPiSxfWCookDFQAAAAAdAAAAABAE'
   const dashboardImageDark = '/images/front-pages/landing-page/hero-dashboard-dark.png'
   const elementsImageLight = '/images/front-pages/landing-page/hero-elements-light.png'
   const elementsImageDark = '/images/front-pages/landing-page/hero-elements-dark.png'
-  const heroSectionBgLight = '/images/front-pages/landing-page/hero-bg-light.png'
+
+  // const heroSectionBgLight = '/images/front-pages/landing-page/hero-bg-light.png'
+  const heroSectionBgLight = ''
+
+  // const heroSectionBgLight = '/images/front-pages/landing-page/rb_169261.png'
+
+  // const heroSectionBgLight = '/images/front-pages/landing-page/download.jpeg'
   const heroSectionBgDark = '/images/front-pages/landing-page/hero-bg-dark.png'
 
   // Hooks
@@ -87,7 +96,7 @@ const HeroSection = ({ mode }: { mode: SystemMode }) => {
           </Typography>
           <div className='flex mbs-6 items-baseline justify-center relative'>
             <div className='flex gap-2 absolute inline-start-[0%] block-start-[41%] max-md:hidden'>
-              <Typography className='font-medium'>Join community</Typography>
+              <Typography className='font-medium'>Join JB Charging</Typography>
               <img src='/images/front-pages/landing-page/join-community-arrow.png' alt='arrow' height='48' width='60' />
             </div>
             <Button
@@ -97,21 +106,27 @@ const HeroSection = ({ mode }: { mode: SystemMode }) => {
               variant='contained'
               color='primary'
             >
-              Get Early Access
+              Book a Demo
             </Button>
           </div>
         </div>
       </div>
       <div
         className={classnames('relative text-center', frontCommonStyles.layoutSpacing)}
-        style={{ transform: isAboveLgScreen ? transform : 'none' }}
+
+        // style={{ transform: isAboveLgScreen ? transform : 'none' }}
       >
-        <Link href='/' target='_blank' className='block relative'>
+        {/* <Link href='/' target='_blank' className='block relative'>
           <img src={dashboardImage} alt='dashboard-image' className={classnames('mli-auto', styles.heroSecDashboard)} />
           <div className={classnames('absolute', styles.heroSectionElements)}>
             <img src={elementsImage} alt='dashboard-elements' />
           </div>
-        </Link>
+        </Link> */}
+        <video playsInline autoPlay muted loop className={classnames('mli-auto', 'rounded', styles.heroSecDashboard)}>
+          <source src='https://jb-partner-images.s3.amazonaws.com/website/vid/demo_new.mov' type='video/quicktime' />
+          <source src='https://jb-partner-images.s3.amazonaws.com/website/vid/demo_new.mp4' type='video/mp4' />
+          Your browser does not support the video tag.
+        </video>
       </div>
     </section>
   )
