@@ -312,6 +312,16 @@ const HorizontalMenu = ({ dictionary }: { dictionary: Awaited<ReturnType<typeof 
               {dictionary['navigation'].helpCenter}
             </MenuItem>
           </SubMenu>
+          {/* CL: This doesn't seem to be needed. */}
+          {/* <MenuItem href='/distributors' target='_blank'>
+            Distributors
+          </MenuItem>
+          <MenuItem href='/products' target='_blank'>
+            Products
+          </MenuItem>
+          <MenuItem href='/venue-operators' target='_blank'>
+            Venue Operators
+          </MenuItem> */}
         </SubMenu>
         <SubMenu label={dictionary['navigation'].formsAndTables} icon={<i className='tabler-file-invoice' />}>
           <MenuItem href={`/${locale}/forms/form-layouts`} icon={<i className='tabler-layout' />}>

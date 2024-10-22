@@ -77,7 +77,6 @@ const FrontMenu = (props: Props) => {
   // Hooks
   const pathname = usePathname()
   const isBelowLgScreen = useMediaQuery((theme: Theme) => theme.breakpoints.down('lg'))
-  const { intersections } = useIntersection()
 
   useEffect(() => {
     if (!isBelowLgScreen && isDrawerOpen) {
@@ -89,74 +88,28 @@ const FrontMenu = (props: Props) => {
   return (
     <Wrapper isBelowLgScreen={isBelowLgScreen} isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen}>
       <Typography
-        color='text.primary'
-        component={Link}
-        href='/front-pages/landing-page'
-        className={classnames('font-medium plb-3 pli-1.5 hover:text-primary', {
-          'text-primary':
-            !intersections.features &&
-            !intersections.team &&
-            !intersections.faq &&
-            !intersections['contact-us'] &&
-            pathname === '/front-pages/landing-page'
-        })}
-      >
-        Home
-      </Typography>
-      <Typography
-        color='text.primary'
-        component={Link}
-        href='/front-pages/landing-page#features'
-        className={classnames('font-medium plb-3 pli-1.5 hover:text-primary', {
-          'text-primary': intersections.features
-        })}
-      >
-        Features
-      </Typography>
-      <Typography
-        color='text.primary'
-        component={Link}
-        href='/front-pages/landing-page#team'
-        className={classnames('font-medium plb-3 pli-1.5 hover:text-primary', {
-          'text-primary': intersections.team
-        })}
-      >
-        Team
-      </Typography>
-      <Typography
-        color='text.primary'
-        component={Link}
-        href='/front-pages/landing-page#faq'
-        className={classnames('font-medium plb-3 pli-1.5 hover:text-primary', {
-          'text-primary': intersections.faq
-        })}
-      >
-        FAQ
-      </Typography>
-      <Typography
-        color='text.primary'
-        component={Link}
-        href='/front-pages/landing-page#contact-us'
-        className={classnames('font-medium plb-3 pli-1.5 hover:text-primary', {
-          'text-primary': intersections['contact-us']
-        })}
-      >
-        Contact us
-      </Typography>
-      <DropdownMenu
-        mode={mode}
-        isBelowLgScreen={isBelowLgScreen}
-        isDrawerOpen={isDrawerOpen}
-        setIsDrawerOpen={setIsDrawerOpen}
-      />
-      <Typography
         component={Link}
         color='text.primary'
-        href='/'
-        target='_blank'
+        href='/distributors'
         className='font-medium plb-3 pli-1.5 hover:text-primary'
       >
-        Admin
+        Distributors
+      </Typography>
+      <Typography
+        component={Link}
+        color='text.primary'
+        href='/products'
+        className='font-medium plb-3 pli-1.5 hover:text-primary'
+      >
+        Products
+      </Typography>
+      <Typography
+        component={Link}
+        color='text.primary'
+        href='/venue-operators'
+        className='font-medium plb-3 pli-1.5 hover:text-primary'
+      >
+        Venue Operators
       </Typography>
     </Wrapper>
   )

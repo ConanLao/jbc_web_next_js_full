@@ -79,6 +79,7 @@
     "valibot": "0.36.0"
   },
   "devDependencies": {
+    "@iconify-json/tabler": "^1.2.5",
     "@iconify/json": "2.2.230",
     "@iconify/tools": "4.0.4",
     "@iconify/types": "2.0.0",

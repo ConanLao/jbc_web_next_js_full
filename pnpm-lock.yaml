@@ -196,6 +196,9 @@ importers:
         specifier: 0.36.0
         version: 0.36.0
     devDependencies:
+      '@iconify-json/tabler':
+        specifier: ^1.2.5
+        version: 1.2.5
       '@iconify/json':
         specifier: 2.2.230
         version: 2.2.230
@@ -707,6 +710,9 @@ packages:
   '@humanwhocodes/object-schema@2.0.3':
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
     deprecated: Use @eslint/object-schema instead
+
+  '@iconify-json/tabler@1.2.5':
+    resolution: {integrity: sha512-BDDLgDCbJ2btwi6cPmBL04QyPyNmWy6H13ynUAX48xxpxqUuG+hT+yrqL+RCugFimrvuhcecbSfEKnFc0BW1Ng==}
 
   '@iconify/json@2.2.230':
     resolution: {integrity: sha512-SbwqcrYfHMnH7Na3S5RNNUdZvX0cLqgkONVMzI8BOfgVCQSY3tXHyHqeu2VkVoxJX9OcHMmfjeavpno7/y3Mfw==}
@@ -4562,6 +4568,10 @@ snapshots:
   '@humanwhocodes/module-importer@1.0.1': {}
 
   '@humanwhocodes/object-schema@2.0.3': {}
+
+  '@iconify-json/tabler@1.2.5':
+    dependencies:
+      '@iconify/types': 2.0.0
 
   '@iconify/json@2.2.230':
     dependencies:

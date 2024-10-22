@@ -76,18 +76,18 @@ const Header = ({ mode }: { mode: Mode }) => {
                 color='primary'
                 target='_blank'
               >
-                <i className='tabler-shopping-cart text-xl' />
+                <i className='tabler-calendar-event text-xl' />
               </CustomIconButton>
             ) : (
               <Button
                 component={Link}
                 variant='contained'
                 href='https://1.envato.market/vuexy_admin'
-                startIcon={<i className='tabler-shopping-cart text-xl' />}
+                startIcon={<i className='tabler-calendar-event text-xl' />}
                 className='whitespace-nowrap'
                 target='_blank'
               >
-                Purchase Now
+                Book a Demo
               </Button>
             )}
           </div>
